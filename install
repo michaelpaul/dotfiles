@@ -11,4 +11,9 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
+if [ ! -d vim/bundle/Vundle.vim ]; then
+	echo "Instalando Vundle"
+	git clone https://github.com/gmarik/Vundle.vim.git vim/bundle/Vundle.vim
+fi
+
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
