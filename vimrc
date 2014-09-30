@@ -99,3 +99,6 @@ set sidescroll=1
 
 " ================ Custom Settings ========================
 " so ~/.yadr/vim/settings.vim
+
+" source ~/.vim/settings.vim
+source ~/.vim/yadr-keymap.vim
