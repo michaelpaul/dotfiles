@@ -102,3 +102,7 @@ set sidescroll=1
 
 " source ~/.vim/settings.vim
 source ~/.vim/yadr-keymap.vim
+
+syntax enable
+set background=dark
+colorscheme solarized

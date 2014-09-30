@@ -11,6 +11,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree.git'
+Plugin 'altercation/vim-colors-solarized.git'
+
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
