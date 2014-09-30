@@ -1,0 +1,10 @@
+vim/backups
+vim/view
+vim/.netrwhist
+vim/tmp
+vim/spell
+vim/.vundles.local
+vim/bundle
+vim/sessions
+.netrwhist
+tags
