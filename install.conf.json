@@ -6,7 +6,8 @@
         "link": {
             "~/.dotfiles": "",
             "~/.vimrc": "vimrc",
-            "~/.vim": "vim/"
+            "~/.vim": "vim/",
+            "~/.gitconfig": "gitconfig"
         }
     },
     {
@@ -16,3 +17,4 @@
         ]
     }
 ]
+
