@@ -1,0 +1,18 @@
+[
+    {
+        "clean": ["~"]
+    },
+    {
+        "link": {
+            "~/.dotfiles": "",
+            "~/.vimrc": "vimrc",
+            "~/.vim": "vim/"
+        }
+    },
+    {
+        "shell": [
+            ["git submodule update --init --recursive", "Instalando/atualizando submodules"],
+            ["vim +PluginUpdate +qall", "Instalando/atualizando vim plugins"]
+        ]
+    }
+]
