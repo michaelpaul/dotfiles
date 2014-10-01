@@ -11,6 +11,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree.git'
+Plugin 'kien/ctrlp.vim'
+
 Plugin 'altercation/vim-colors-solarized.git'
 
 

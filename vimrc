@@ -88,23 +88,21 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
-"
 " ================ Scrolling ========================
 
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
-
 " ================ Custom Settings ========================
 " so ~/.yadr/vim/settings.vim
-
 " source ~/.vim/settings.vim
-source ~/.vim/yadr-keymap.vim
 
-syntax enable
-set background=dark
-colorscheme solarized
+
+" ================ YADR Settings ========================
+
+source ~/.vim/yadr-keymap.vim
+source ~/.vim/yadr-appearance.vim
 
 " ================ Search Settings  =================
 
@@ -113,4 +111,19 @@ set hlsearch        " Hilight searches by default
 set viminfo='100,f1 " Save up to 100 marks, enable capital marks
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
+
+" ================ GUI Options  =================
+
+" Disable the scrollbars (NERDTree)
+set guioptions-=r
+set guioptions-=L
+
+" Disable the macvim toolbar
+set guioptions-=T
+
+" ================ Plugins Options  =================
+" CtrlP
+nnoremap <silent> ,t :CtrlP<CR>
+" Additional mapping for buffer search
+nnoremap <silent> ,b :CtrlPBuffer<cr>
 

@@ -7,7 +7,8 @@
             "~/.dotfiles": "",
             "~/.vimrc": "vimrc",
             "~/.vim": "vim/",
-            "~/.gitconfig": "gitconfig"
+            "~/.gitconfig": "gitconfig",
+            "~/.ackrc": "ackrc"
         }
     },
     {
