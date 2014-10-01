@@ -101,7 +101,7 @@ imap <C-a> <esc>wa
 
 " ==== NERD tree
 " Cmd-Shift-N for nerd tree
-nmap <C-N> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
 
@@ -150,15 +150,15 @@ nnoremap <C-w>gf :tabe<cfile><CR>
 map <silent> ,gz <C-w>o
 
 " Use ALT-Number to pick the tab you want (like Google Chrome)
-map <silent> <M-1> :tabn 1<cr>
-map <silent> <M-2> :tabn 2<cr>
-map <silent> <M-3> :tabn 3<cr>
-map <silent> <M-4> :tabn 4<cr>
-map <silent> <M-5> :tabn 5<cr>
-map <silent> <M-6> :tabn 6<cr>
-map <silent> <M-7> :tabn 7<cr>
-map <silent> <M-8> :tabn 8<cr>
-map <silent> <M-9> :tabn 9<cr>
+map <silent> ,1 :tabn 1<cr>
+map <silent> ,2 :tabn 2<cr>
+map <silent> ,3 :tabn 3<cr>
+map <silent> ,4 :tabn 4<cr>
+map <silent> ,5 :tabn 5<cr>
+map <silent> ,6 :tabn 6<cr>
+map <silent> ,7 :tabn 7<cr>
+map <silent> ,8 :tabn 8<cr>
+map <silent> ,9 :tabn 9<cr>
 
 " Create window splits easier. The default
 " way is Ctrl-w,v and Ctrl-w,s. I remap
