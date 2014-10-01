@@ -13,7 +13,7 @@
     {
         "shell": [
             ["git submodule update --init --recursive", "Instalando/atualizando submodules"],
-            ["vim +PluginUpdate +qall", "Instalando/atualizando vim plugins"]
+            ["vim +PluginInstall +qall", "Instalando plugins do vim"]
         ]
     }
 ]

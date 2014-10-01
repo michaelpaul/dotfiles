@@ -101,7 +101,7 @@ imap <C-a> <esc>wa
 
 " ==== NERD tree
 " Cmd-Shift-N for nerd tree
-nmap <D-N> :NERDTreeToggle<CR>
+nmap <C-N> :NERDTreeToggle<CR>
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
 
@@ -149,16 +149,16 @@ nnoremap <C-w>gf :tabe<cfile><CR>
 " Zoom in
 map <silent> ,gz <C-w>o
 
-" Use numbers to pick the tab you want (like iTerm)
-map <silent> <D-1> :tabn 1<cr>
-map <silent> <D-2> :tabn 2<cr>
-map <silent> <D-3> :tabn 3<cr>
-map <silent> <D-4> :tabn 4<cr>
-map <silent> <D-5> :tabn 5<cr>
-map <silent> <D-6> :tabn 6<cr>
-map <silent> <D-7> :tabn 7<cr>
-map <silent> <D-8> :tabn 8<cr>
-map <silent> <D-9> :tabn 9<cr>
+" Use ALT-Number to pick the tab you want (like Google Chrome)
+map <silent> <M-1> :tabn 1<cr>
+map <silent> <M-2> :tabn 2<cr>
+map <silent> <M-3> :tabn 3<cr>
+map <silent> <M-4> :tabn 4<cr>
+map <silent> <M-5> :tabn 5<cr>
+map <silent> <M-6> :tabn 6<cr>
+map <silent> <M-7> :tabn 7<cr>
+map <silent> <M-8> :tabn 8<cr>
+map <silent> <M-9> :tabn 9<cr>
 
 " Create window splits easier. The default
 " way is Ctrl-w,v and Ctrl-w,s. I remap
@@ -167,10 +167,10 @@ nnoremap <silent> vv <C-w>v
 nnoremap <silent> ss <C-w>s
 
 " Resize windows with arrow keys
-nnoremap <D-Up> <C-w>+
-nnoremap <D-Down> <C-w>-
-nnoremap <D-Left> <C-w><
-nnoremap <D-Right>  <C-w>>
+nnoremap <M-Up> <C-w>+
+nnoremap <M-Down> <C-w>-
+nnoremap <M-Left> <C-w><
+nnoremap <M-Right>  <C-w>>
 
 " create <%= foo %> erb tags using Ctrl-k in edit mode
 imap <silent> <C-K> <%=   %><Esc>3hi
