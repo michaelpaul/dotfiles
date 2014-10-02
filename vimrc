@@ -98,6 +98,18 @@ set sidescroll=1
 " so ~/.yadr/vim/settings.vim
 " source ~/.vim/settings.vim
 
+" Não uso o ";", trocar por ":"
+nnoremap ; :
+
+" Fact: http://stackoverflow.com/questions/397229/reaching-up-to-hit-the-escape-key-sucks-especially-in-vim
+" Make jj do esc
+inoremap jj <Esc>
+" Make jj do esc in command mode
+cno jj <c-c>
+" Make v do esc in visual mode
+vno v <Esc>
+" Make esc do nothing (even with CapsLock) to stop using it.
+inoremap <Esc> <Nop>
 
 " ================ YADR Settings ========================
 
@@ -127,3 +139,5 @@ nnoremap <silent> ,t :CtrlP<CR>
 " Additional mapping for buffer search
 nnoremap <silent> ,b :CtrlPBuffer<cr>
 
+" Default to filename searches
+let g:ctrlp_by_filename = 1
