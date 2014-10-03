@@ -115,6 +115,7 @@ inoremap <Esc> <Nop>
 
 source ~/.vim/yadr-keymap.vim
 source ~/.vim/yadr-appearance.vim
+source ~/.vim/yadr-whitespace-killer.vim
 
 " ================ Search Settings  =================
 
@@ -138,6 +139,10 @@ set guioptions-=T
 nnoremap <silent> ,t :CtrlP<CR>
 " Additional mapping for buffer search
 nnoremap <silent> ,b :CtrlPBuffer<cr>
+
+" Don't jump to already open window. This is annoying if you are maintaining
+" several Tab workspaces and want to open two windows into the same file.
+let g:ctrlp_switch_buffer = 0
 
 " Default to filename searches
 let g:ctrlp_by_filename = 1
