@@ -134,6 +134,10 @@ set guioptions-=L
 " Disable the macvim toolbar
 set guioptions-=T
 
+" Aways show statusline
+set laststatus=2
+source ~/.vim/lightline.vim
+
 " ================ Plugins Options  =================
 " CtrlP
 nnoremap <silent> ,t :CtrlP<CR>
