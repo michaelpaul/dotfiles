@@ -51,12 +51,17 @@ endif
 
 " ================ Indentation ======================
 
+" Usando espaços ao invés de tabulações.
+" shiftwidth: largura da indentacao
+" softtabstop: tab executa o comando 'indent' ao inves de inserir o caracter
+" tabstop: largura para exibir caracter tab (vi, vim) "
+" expandtab: converte tab em espacos
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set expandtab
 
 filetype plugin on

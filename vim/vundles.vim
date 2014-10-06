@@ -10,13 +10,16 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" General
+Plugin 'tomtom/tcomment_vim.git'
+
 " Project
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'kien/ctrlp.vim'
 
 " Appearance
 Plugin 'altercation/vim-colors-solarized.git'
-Bundle "itchyny/lightline.vim"
+Bundle 'itchyny/lightline.vim'
 
 
 " The following are examples of different formats supported.
