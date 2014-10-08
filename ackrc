@@ -16,6 +16,7 @@
 --nonib
 --notmstuff
 --noxcode
+--ignore-file=is:tags
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=vendor

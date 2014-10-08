@@ -11,7 +11,11 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " General
+Plugin 'ervandew/supertab.git'
 Plugin 'tomtom/tcomment_vim.git'
+
+" Search
+Plugin 'vim-scripts/IndexedSearch'
 
 " Project
 Plugin 'scrooloose/nerdtree.git'
