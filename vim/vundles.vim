@@ -25,6 +25,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized.git'
 Bundle 'itchyny/lightline.vim'
 
+" Language
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
