@@ -8,7 +8,9 @@
             "~/.vimrc": "vimrc",
             "~/.vim": "vim/",
             "~/.gitconfig": "gitconfig",
-            "~/.ackrc": "ackrc"
+            "~/.gitignore": "gitignore",
+            "~/.ackrc": "ackrc",
+            "~/.ctags": "ctags"
         }
     },
     {

@@ -17,6 +17,8 @@
 --notmstuff
 --noxcode
 --ignore-file=is:tags
+--ignore-file=ext:log
+--ignore-file=match:/log.\d+/
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=vendor
