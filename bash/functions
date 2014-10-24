@@ -244,3 +244,35 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Executa um comando carregando seus argumentos de um arquivo de config, exemplo:
+#
+# $ dotfileit ctags
+#
+# Vai executar o ctags com os argumentos no arquivo  ~/.ctags
+function dotfileit() {
+    local config=~/.dotfiles/${1};
+
+    if [ ! -f $config ]; then
+        echo "Config file not found: ${config}";
+        return 1;
+    fi;
+
+# Config gerada por outro programa
+    if [ -x $config ]; then
+        local args=$(sh -c $config);
+# echo $1;
+# echo $config;
+# echo $args;
+        sh -c $1 $args;
+    elif [ -f $config ]; then
+        local args=$(cat $config);
+        sh -c ${1} $args;
+    fi;
+
+# cat ~/.${1} | xargs ${1};
+# cat ~/.${1} | xargs ${1};
+# echo ${1} $args | sh ;
+
+# sh -c ${1} $args;
+}
