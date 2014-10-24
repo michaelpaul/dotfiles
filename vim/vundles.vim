@@ -11,7 +11,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " General
-Plugin 'ervandew/supertab.git'
+" Plugin 'ervandew/supertab.git'
+Plugin 'Shougo/neocomplete.vim'
 Plugin 'tomtom/tcomment_vim.git'
 
 " Search
@@ -28,6 +29,11 @@ Bundle 'itchyny/lightline.vim'
 " Language
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/javascript-libraries-syntax.vim'
+
+" Snippets
+Plugin 'SirVer/ultisnips'
+" Additional snippets
+Plugin 'honza/vim-snippets'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
