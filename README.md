@@ -3,6 +3,25 @@ Michael Paul's dotfiles
 
 Meus arquivos de configuração.
 
+## Utilização
+
+Instalação.
+
+```
+git clone https://github.com/michaelpaul/dotfiles.git
+cd dotfiles
+./install
+vim +PluginInstall
+```
+
+Atualização.
+
+```
+git pull
+./install
+vim +PluginUpdate
+```
+
 ## Referências / Fontes
 
 * [Yan Pritzker's dotfiles](https://github.com/skwp/dotfiles)

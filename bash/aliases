@@ -147,3 +147,6 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 # alias ctags="ctags --exclude=@$HOME/.gitignore"
 alias agtags="ag -l  . | ctags -L -"
 
+# Container temporario para testes.
+alias tmpbox="docker run --rm -ti michaelpaul/sandbox"
+
