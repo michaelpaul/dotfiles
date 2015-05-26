@@ -47,6 +47,9 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update-osx='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
+# Atualizar o brew e o cask
+alias update-brew='brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup'
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
@@ -147,6 +150,16 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 # alias ctags="ctags --exclude=@$HOME/.gitignore"
 alias agtags="ag -l  . | ctags -L -"
 
-# Container temporario para testes.
-alias tmpbox="docker run --rm -ti michaelpaul/sandbox"
+# Container temporario
+alias tmpbox="docker run --rm -ti "
+
+# Meu container temporario para testes.
+alias mysandbox="tmpbox michaelpaul/sandbox"
+
+# OS X only
+alias dylibdeps="otool -L"
+
+# Default Vim
+# Não carregar o vimrc ou runtime padrão, e sem compatibilidade com Vi
+alias dvim="vim -N -u NONE"
 

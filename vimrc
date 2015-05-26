@@ -114,7 +114,7 @@ cno jj <c-c>
 " Make v do esc in visual mode
 vno v <Esc>
 " Make esc do nothing (even with CapsLock) to stop using it.
-inoremap <Esc> <Nop>
+" inoremap <Esc> <Nop>
 
 " ================ YADR Settings ========================
 
