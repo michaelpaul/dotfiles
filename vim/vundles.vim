@@ -31,7 +31,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'othree/javascript-libraries-syntax.vim'
 
 " Snippets
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 " Additional snippets
 Plugin 'honza/vim-snippets'
 

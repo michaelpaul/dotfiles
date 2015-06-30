@@ -110,7 +110,7 @@
   default = tracking
 [core]
   autocrlf = false
-  editor = atom --wait
+  editor = vim
   excludesfile = ~/.yadr/git/gitignore
 [advice]
   statusHints = false

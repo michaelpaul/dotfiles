@@ -156,6 +156,9 @@ alias tmpbox="docker run --rm -ti "
 # Meu container temporario para testes.
 alias mysandbox="tmpbox michaelpaul/sandbox"
 
+# Docker compose (ex. fig)
+alias dkc="docker-compose"
+
 # OS X only
 alias dylibdeps="otool -L"
 
@@ -163,3 +166,5 @@ alias dylibdeps="otool -L"
 # Não carregar o vimrc ou runtime padrão, e sem compatibilidade com Vi
 alias dvim="vim -N -u NONE"
 
+# grep nos processos excluindo o próprio grep
+alias psgrep="ps aux | grep -v grep | grep -i"
