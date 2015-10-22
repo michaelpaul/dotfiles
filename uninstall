@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php  
+// Remover todos os links da config 
+$conf = json_decode(file_get_contents('install.conf.json'));
+$links = array();
+
+foreach ($conf as $value) {
+    if (isset($value->link)) {
+        $links = array_merge($links, array_keys((array) $value->link));
+    }
+}
+
+foreach ($links as $link) {
+    echo "removendo: $link \n";
+    `rm -f $link`;
+}

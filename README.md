@@ -22,6 +22,12 @@ git pull
 vim +PluginUpdate
 ```
 
+Desinstalar (util em mudanças de caminhos).
+
+```
+./uninstall
+```
+
 ## Referências / Fontes
 
 * [Yan Pritzker's dotfiles](https://github.com/skwp/dotfiles)
