@@ -12,7 +12,6 @@ function update-osx() {
 function update-brew() {
 	brew update;
 	brew upgrade;
-	brew upgrade brew-cask;
 	brew cleanup;
 	brew cask cleanup;
 }
@@ -115,6 +114,10 @@ function phpserver() {
 	local ip=$(ipconfig getifaddr en1);
 	sleep 1 && open "http://${ip}:${port}/" &
 	php -S "${ip}:${port}";
+}
+
+function smtpdebugserver() {
+    sudo python -m smtpd -n -c DebuggingServer localhost:25
 }
 
 # Compare original and gzipped file size
@@ -237,3 +240,10 @@ function dockerclean() {
 function dockerenter() {
     docker exec -ti $1 bash
 }
+
+# Carregar variáveis de ambiente do Docker Machine
+
+function dockervars() {
+    eval "$(docker-machine env default)"
+}
+

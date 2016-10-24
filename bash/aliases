@@ -96,7 +96,7 @@ command -v grunt > /dev/null && alias grunt="grunt --stack"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Reload the shell (i.e. invoke as a login shell)
-alias reload="exec $SHELL -l"
+alias reloadconfig="exec $SHELL -l"
 
 # Usar ignores do git no ctags
 # alias ctags="ctags --exclude=@$HOME/.gitignore"
