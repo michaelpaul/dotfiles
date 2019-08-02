@@ -25,7 +25,8 @@
     },
     {
         "shell": [
-            ["git submodule update --init --recursive", "Instalando/atualizando submodules"]
+            ["git submodule update --init --recursive", "Instalando/atualizando submodules"],
+            ["vim +PluginInstall +qa", "Install vim plugins"]
         ]
     }
 ]

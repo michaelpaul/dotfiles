@@ -8,7 +8,6 @@ set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
-set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set novisualbell                "No sounds, blinks
 set autoread                    "Reload files changed outside vim
@@ -67,9 +66,6 @@ set expandtab
 filetype plugin on
 filetype indent on
 
-" Display tabs and trailing spaces visually
-set list listchars=tab:\ \ ,trail:·
-
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
@@ -119,7 +115,6 @@ vno v <Esc>
 " ================ YADR Settings ========================
 
 source ~/.vim/yadr-keymap.vim
-source ~/.vim/yadr-appearance.vim
 source ~/.vim/yadr-whitespace-killer.vim
 
 " ================ Search Settings  =================
@@ -141,7 +136,10 @@ set guioptions-=T
 
 " Aways show statusline
 set laststatus=2
-source ~/.vim/lightline.vim
+if !has('gui_running')
+  set t_Co=256
+endif
+set noshowmode
 
 " ================ Plugins Options  =================
 " CtrlP
@@ -158,9 +156,6 @@ let g:ctrlp_by_filename = 1
 
 " ** Usar Tab para expandir snippets e Ctrl-Space para autocomplete  ** "
 
-" Neocomplete
-source ~/.vim/neocomplete.vim
-
 " UltiSnips
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -174,5 +169,3 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
-
-

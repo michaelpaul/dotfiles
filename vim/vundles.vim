@@ -12,7 +12,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " General
 " Plugin 'ervandew/supertab.git'
-Plugin 'Shougo/neocomplete.vim'
 Plugin 'tomtom/tcomment_vim.git'
 
 " Search
